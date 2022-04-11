@@ -1,7 +1,7 @@
 html{
     font-size: 62.5%;
-    background: url('luz.webp') no-repeat center center fixed; 
-    background-size: 100% 100%;
+    background: url('zzz.jpg') no-repeat center center fixed; 
+    background-size: cover;
 }
 
 
@@ -58,7 +58,7 @@ html{
 }
 
 .btn:hover{
-    background: rgb(255, 195, 195);
+    background: rgb(255, 255, 255);
 }
 
 .login-form-container{
@@ -160,7 +160,60 @@ html{
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
-@media (max-width:991px){
+ 
+
+
+.typed{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top:18rem;
+    /* left:15rem; */
+    padding-left: 10rem;
+    font-size: large;
+    font-weight: 10000000;
+    color:rgb(0, 0, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.typed h1 {
+    font-weight: 1000000;
+    /* margin: 0.4em 0; */
+  }
+  h1 { font-size: 4.5rem; }
+
+.typed .txt-rotate{
+    font-size: 4rem;
+    
+}
+
+.more-info{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 17rem;
+    padding-left: 30%;
+    gap: .5rem;
+}
+
+.more-info .hy{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eee;
+}
+
+.more-info .hey{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.more-info .btn:hover{
+    background-color: transparent;
+    color:black ;
+}
+
+
+@media (max-width:1100px){
     .header{
         padding: 2rem;
     }
@@ -172,12 +225,59 @@ html{
     .login-form-container #close-login-container{
         font-size: 2rem;
     }
+
+    .header #menu-bar{
+        display: block;
+    }
+
+    #menu-bar.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .login .btn{
+        display: none;
+    }
+
+    .login i{
+        display: block;
+    }
+
+    .header .main-nav{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: #eee;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .main-nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background-color: transparent;
+    }
+
+    .header .main-nav a{
+        margin:2rem;
+        display: block;
+        font-size: 2rem;
+    }
+
+    /* .login-form-container #close-login-container{
+        font-size: 2rem;
+    } */
+
+    .typed .txt-rotate{
+        font-size: 3rem;
+    }
+
+    .typed{
+        padding-left: 10rem;
+    }
 }
 
 @media (max-width:720px){
     html { 
-        background: url('lufffff.jpg') no-repeat center center fixed;
-        background-size: 100% 100%; 
+        background: url('_23_ace-wallpaper-one-piece_3091720149.jpg') no-repeat center center fixed;
+        background-size: cover; 
     }
     .header #menu-bar{
         display: block;
@@ -216,5 +316,24 @@ html{
 
     .login-form-container #close-login-container{
         font-size: 2rem;
+    }
+
+    .typed{
+        padding-left: 7rem;
+        top: 25rem;
+        color: rgb(255, 253, 253);
+    }
+
+    .more-info{
+        top: 24rem;
+        padding-left: 40%;
+    }
+
+    .more-info .hy{
+        color: rgb(0, 0, 0);
+    }
+
+    .more-info .hey{
+        color: rgb(0, 0, 0);
     }
 }
