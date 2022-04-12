@@ -1,7 +1,7 @@
 html{
     font-size: 62.5%;
     background: url('zzz.jpg') no-repeat center center fixed; 
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 
@@ -276,7 +276,7 @@ html{
 
 @media (max-width:720px){
     html { 
-        background: url('_23_ace-wallpaper-one-piece_3091720149.jpg') no-repeat center center fixed;
+        background: url('Ace.jpg') no-repeat center center fixed;
         background-size: cover; 
     }
     .header #menu-bar{
