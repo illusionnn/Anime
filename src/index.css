@@ -337,3 +337,133 @@ html{
         color: rgb(0, 0, 0);
     }
 }
+
+
+@media (max-width:912px){
+    html { 
+        background: url('Ace.jpg') no-repeat center center fixed;
+        background-size: cover; 
+    }
+    .header #menu-bar{
+        display: block;
+    }
+
+    #menu-bar.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .login .btn{
+        display: none;
+    }
+
+    .login i{
+        display: block;
+    }
+
+    .header .main-nav{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: #eee;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .main-nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background-color: transparent;
+    }
+
+    .header .main-nav a{
+        margin:2rem;
+        display: block;
+        font-size: 2rem;
+    }
+
+    .login-form-container #close-login-container{
+        font-size: 2rem;
+    }
+
+    .typed{
+        padding-left: 7rem;
+        top: 25rem;
+        color: rgb(255, 253, 253);
+    }
+
+    .more-info{
+        top: 24rem;
+        padding-left: 40%;
+    }
+
+    .more-info .hy{
+        color: rgb(0, 0, 0);
+    }
+
+    .more-info .hey{
+        color: rgb(0, 0, 0);
+    }
+}
+
+/*media for galaxy fold*/
+@media (max-width:375px){
+    html { 
+        background: url('Ace.jpg') no-repeat center center fixed;
+        background-size: cover; 
+    }
+    .header #menu-bar{
+        display: block;
+    }
+
+    #menu-bar.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .login .btn{
+        display: none;
+    }
+
+    .login i{
+        display: block;
+    }
+
+    .header .main-nav{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: #eee;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .main-nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background-color: transparent;
+    }
+
+    .header .main-nav a{
+        margin:2rem;
+        display: block;
+        font-size: 2rem;
+    }
+
+    .login-form-container #close-login-container{
+        font-size: 2rem;
+    }
+
+    .typed{
+        padding-left: 5rem;
+        top: 20rem;
+        color: rgb(255, 253, 253);
+    }
+
+    .more-info{
+        top: 24rem;
+        padding-left: 40%;
+    }
+
+    .more-info .hy{
+        color: rgb(0, 0, 0);
+    }
+
+    .more-info .hey{
+        color: rgb(0, 0, 0);
+    }
+}
